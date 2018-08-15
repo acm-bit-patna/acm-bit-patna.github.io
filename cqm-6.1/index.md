@@ -1,9 +1,19 @@
 ---
-title: CQM 6.1 editorials
+title: CQM 6.1 editorials & leaderboard
 description: Editorials for CQM 6.1 conducted on 14th August, 2018
 ---
-# CQM-6.1-Editorials
-Editorials for CQM 6.1 conducted on 14th August, 2018
+
+# [CQM-6.1](https://www.hackerrank.com/contests/cqm-6-1/)
+
+Contest conducted on 14th August, 2018
+
+# Leaderboard
+
+1. Maverick_12345 (Sanjeet Kumar 2k16)
+2. aditigupta6226 (Aditi Gupta 2k17) (Winner)
+3. weBloomer (Roushan 2k16)
+
+# Editorials
 
 ## [Brady's Cricket Scorecard](https://www.hackerrank.com/contests/cqm-6-1/challenges/bradys-cricket-scorecard)
 
@@ -124,7 +134,7 @@ Troops distribution in step 1 will be [1,1,1,1,1,1,1], in step 2 it will be [1,2
 Complexity: O(n).
 
 Code (in Java) :
-
+````java
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -153,9 +163,10 @@ public class princess {
                  System.out.println(sum1);
     }
 }
+````
 
 Code (in C++) :
-
+````cpp
 #include <iostream>
 #define ll long long
 using namespace std;
@@ -185,3 +196,4 @@ int main(){
     cout<<sum<<endl;
     return 0;
 }
+````
