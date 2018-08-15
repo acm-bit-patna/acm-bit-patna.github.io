@@ -1,19 +1,9 @@
 ---
-title: CQM 6.1 editorials & leaderboard
+title: CQM 6.1 editorials
 description: Editorials for CQM 6.1 conducted on 14th August, 2018
 ---
-
-# [CQM-6.1](https://www.hackerrank.com/contests/cqm-6-1/)
-
-Contest conducted on 14th August, 2018
-
-# Leaderboard
-
-1. Maverick_12345 (Sanjeet Kumar 2k16)
-2. aditigupta6226 (Aditi Gupta 2k17) (Winner)
-3. weBloomer (Roushan 2k16)
-
-# Editorials
+# CQM-6.1-Editorials
+Editorials for CQM 6.1 conducted on 14th August, 2018
 
 ## [Brady's Cricket Scorecard](https://www.hackerrank.com/contests/cqm-6-1/challenges/bradys-cricket-scorecard)
 
@@ -118,3 +108,80 @@ Code (in C++) :
  cout<<ans<<endl ;
 }
 ````
+
+## [Queens On The Mars](https://www.hackerrank.com/contests/cqm-6-1/challenges/queens-on-the-mars)
+There are many approaches to solve this problem either by Dynamic Programming or by Greedy Algorithm or also by simple implementation.
+Following is the DP implementation:
+The number of queens and their priority is given in the question. Make an array let ‘dp[n]’ of size ‘n’ containing the distribution of troops.
+Step 1:  Assign all indices of dp[n] by 1 i.e. distribute 1 troop to all queens.
+Step 2:  Traverse from left to right in the Priority array, if priority of next queen is greater than the present, increase the number of troops of next queen by 1 from the present queen i.e. dp[i+1]=dp[i]+1.
+Step 3:  Repeat the step 2 from right to left, if priority of next queen is greater than the present but troops in not greater, then increase the number of troops of next queen by 1 from the present queen i.e. dp[i-1]=dp[i]+1.
+The array dp[n] obtained now is optimal distribution of troops, print the sum of all troops in array dp[n].
+
+For example let there the 7 queens and their priorities are [3 8 8 4 3 2 1]
+Troops distribution in step 1 will be [1,1,1,1,1,1,1], in step 2 it will be [1,2,1,1,1,1,1], and finally in step 3 it will be [1,2,5,4,3,2,1], which is the optimal distribution of troops.
+
+Complexity: O(n).
+
+Code (in Java) :
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+
+public class princess {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt(),a[]=new int[n],i,j,b[]=new int[n],dp[]=new int[n]; long sum1=0,sum2=0;
+            for(i=0;i<n;i++)
+                a[i]=sc.nextInt();
+              dp[0]=1;
+              for(i=1;i<n;i++) {
+            	  if(a[i]>a[i-1])
+            		  dp[i]=dp[i-1]+1;
+            	  else if(a[i]<=a[i-1])
+            		  dp[i]=1;
+              }
+                for(i=n-2;i>=0;i--) {
+                	if(a[i]>a[i+1])
+                		dp[i]=Math.max(dp[i],dp[i+1]+1);
+                }
+                 for(i=0;i<n;i++)
+                	 sum1+=dp[i];
+                 System.out.println(sum1);
+    }
+}
+
+Code (in C++) :
+
+#include <iostream>
+#define ll long long
+using namespace std;
+
+int main(){
+    ll n;
+    cin>>n;
+    ll arr[n], dp[n];
+    for(ll i=0; i<n; i++){
+        cin>>arr[i];
+        dp[i]=1;
+    }
+    for(ll i=0; i<n-1; i++){
+        if(arr[i+1]>arr[i]){
+            dp[i+1]=dp[i]+1;
+        }
+    }
+    for(ll i=n-1; i>0; i--){
+        if(arr[i-1]>arr[i] && dp[i-1]<=dp[i]){
+            dp[i-1]=dp[i]+1;
+        }
+    }
+    ll sum=0;
+    for(ll i=0; i<n; i++){
+        sum+=dp[i];
+    }
+    cout<<sum<<endl;
+    return 0;
+}
