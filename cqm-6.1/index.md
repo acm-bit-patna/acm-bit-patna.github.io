@@ -122,10 +122,15 @@ Code (in C++) :
 ## [Queens On The Mars](https://www.hackerrank.com/contests/cqm-6-1/challenges/queens-on-the-mars)
 There are many approaches to solve this problem either by Dynamic Programming or by Greedy Algorithm or also by simple implementation.
 Following is the DP implementation:
+
 The number of queens and their priority is given in the question. Make an array let ‘dp[n]’ of size ‘n’ containing the distribution of troops.
+
 Step 1:  Assign all indices of dp[n] by 1 i.e. distribute 1 troop to all queens.
+
 Step 2:  Traverse from left to right in the Priority array, if priority of next queen is greater than the present, increase the number of troops of next queen by 1 from the present queen i.e. dp[i+1]=dp[i]+1.
+
 Step 3:  Repeat the step 2 from right to left, if priority of next queen is greater than the present but troops in not greater, then increase the number of troops of next queen by 1 from the present queen i.e. dp[i-1]=dp[i]+1.
+
 The array dp[n] obtained now is optimal distribution of troops, print the sum of all troops in array dp[n].
 
 For example let there the 7 queens and their priorities are [3 8 8 4 3 2 1]
