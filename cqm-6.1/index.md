@@ -1,3 +1,9 @@
+---
+title: CQM 6.1 editorials
+description: Editorials for CQM 6.1 conducted on 14th August, 2018
+categories: [gsoc]
+comments: true
+---
 # CQM-6.1-Editorials
 Editorials for CQM 6.1 conducted on 14th August, 2018
 
