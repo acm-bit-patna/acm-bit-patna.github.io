@@ -121,7 +121,6 @@ Code (in C++) :
 
 ## [Queens On The Mars](https://www.hackerrank.com/contests/cqm-6-1/challenges/queens-on-the-mars)
 There are many approaches to solve this problem either by Dynamic Programming or by Greedy Algorithm or also by simple implementation.
-Following is the DP implementation:
 
 The number of queens and their priority is given in the question. Make an array let ‘dp[n]’ of size ‘n’ containing the distribution of troops.
 
