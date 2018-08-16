@@ -20,9 +20,9 @@ Here is a list of events conducted by ACM Team of 2k18:
 ### Technical Heads: Ayush Raj, Rishabh Sinha
 
 ### Co-ordinators from 2k17 Batch: 
-* Aditi Gupta
+* Aditi
 * Vaishali
-* Prachi Jaiswal
+* Prachi
 * Utkarsh Dubey
 * Vishal Roy
 * Adel Afaaq
