@@ -30,6 +30,6 @@ Here is a list of events conducted by ACM Team of 2k18:
 
 
 ## Contact
-[Github](http://github.com/acmbitpatna)
+[Github](http://github.com/acm-bit-patna)
 
 [Facebook](https://www.facebook.com/acmbitpatna)
