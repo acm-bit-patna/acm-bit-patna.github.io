@@ -11,6 +11,8 @@ Here is a list of events conducted by ACM Team of 2k18:
 | --- | --- | --- |
 | [CQM 6.1](https://www.hackerrank.com/cqm-6-1) | 14th August, 2018 21:45 to 15th August 00:15 (2hr 30mins) | [Click here](/cqm-6.1) |
 
+| [CQM 6.2](https://www.hackerrank.com/cqm-6-2) | 5th November, 2018 21:45 to 6th November 00:15 (Cancelled due to lack of participants) | [Click here](/cqm-6.2) |
+
 ## Members
 
 ### President: Abhishek Kumar
