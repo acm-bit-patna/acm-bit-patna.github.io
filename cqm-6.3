@@ -1,6 +1,6 @@
 ---
 title: CQM 6.3 editorials
-description: Editorials for CQM 6.1 conducted on 26th January, 2019.
+description: Editorials for CQM 6.3 conducted on 26th January, 2019.
 ---
 
 # [CQM-6.3](https://www.hackerrank.com/contests/cqm-6-3/)
