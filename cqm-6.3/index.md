@@ -45,9 +45,12 @@ You can use ternary search or use geometry to find the answer.
 
 This is a classicl dynamic programming problem that we can solve recursively.
 Let's define a function named "solve(i,make)" that finds the number of ways to make "make" using coins from i to "numCoins". From this state, you have two options:
+
 1. Take coin "i", making the next state "solve(i,make-c[i])".
 2. Go on to the next coin, making the next state "solve(i+1,make)".
+
 The answer for "solve(i,make)" will be the sum of those two subproblems. If "make" becomes "0", then return "1" (because there is only  way to make change for "0" units — don't take any coins!).
+
 Don't forget to eliminate the overlapping subproblems using memoization, or your solution will time out. It's also important to note that the answer may be larger than a 32-bit integer.
 
 
