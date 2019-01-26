@@ -33,3 +33,10 @@ int main(){
 }
 
 ```
+
+## [Brady and the river](https://www.hackerrank.com/contests/cqm-6-3/challenges/brady-and-the-river)
+
+You can use ternary search or use geometry to find the answer.
+
+![Geometry solution](editorial.png)
+
