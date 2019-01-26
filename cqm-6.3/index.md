@@ -75,6 +75,26 @@ You can use ternary search or use geometry to find the answer.
 
 ![Geometry solution](editorial.png)
 
+Code(in C++) :
+``` cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int t;
+  cin >> t;
+  while(t--) {
+    int dl,dc,dr;
+    cin >> dl >> dc >> dr;
+    int dis = (dl+dc)*(dl+dc) + dr*dr;
+    cout << setprecision(6) << fixed;
+    double disf = sqrt((double)dis);
+    cout << disf << endl;
+  }
+  return 0;
+}
+```
+
 
 ## [Mark And His Girlfriend](https://www.hackerrank.com/contests/cqm-6-3/challenges/mark-and-his-girlfriend)
 
