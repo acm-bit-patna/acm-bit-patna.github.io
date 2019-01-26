@@ -5,6 +5,15 @@ description: Editorials for CQM 6.3 conducted on 26th January, 2019.
 
 # [CQM-6.3](https://www.hackerrank.com/contests/cqm-6-3/)
 
+
+# LeaderBoard
+
+1.) Aditi (2k17 batch)
+
+2.) Manish Kumar (2k16 batch)
+
+3.) Vishal Roy (2k17 batch)
+
 # Editorials
 
 ## [Dashiell And High Jump](https://www.hackerrank.com/contests/cqm-6-3/challenges/dashiell-and-high-jump)
