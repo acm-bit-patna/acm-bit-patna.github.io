@@ -107,7 +107,7 @@ int main() {
 
 ## [Mark And His Girlfriend](https://www.hackerrank.com/contests/cqm-6-3/challenges/mark-and-his-girlfriend)
 
-This is a classicl dynamic programming problem that we can solve recursively.
+This is a classical dynamic programming problem that we can solve recursively.
 Let's define a function named "solve(i,make)" that finds the number of ways to make "make" using coins from i to "numCoins". From this state, you have two options:
 
 1. Take coin "i", making the next state "solve(i,make-c[i])".
