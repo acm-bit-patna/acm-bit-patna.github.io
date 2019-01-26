@@ -40,3 +40,43 @@ You can use ternary search or use geometry to find the answer.
 
 ![Geometry solution](editorial.png)
 
+
+## [Mark And His Girlfriend](https://www.hackerrank.com/contests/cqm-6-3/challenges/mark-and-his-girlfriend)
+
+This is a classicl dynamic programming problem that we can solve recursively.
+Let's define a function named "solve(i,make)" that finds the number of ways to make "make" using coins from i to "numCoins". From this state, you have two options:
+1. Take coin "i", making the next state "solve(i,make-c[i])".
+2. Go on to the next coin, making the next state "solve(i+1,make)".
+The answer for "solve(i,make)" will be the sum of those two subproblems. If "make" becomes "0", then return "1" (because there is only  way to make change for "0" units — don't take any coins!).
+Don't forget to eliminate the overlapping subproblems using memoization, or your solution will time out. It's also important to note that the answer may be larger than a 32-bit integer.
+
+
+Code (in C++) :
+```cpp
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int c[52];
+int numCoins;
+ll table[52][252];
+bool calculated[52][252];
+ll solve(int i, int make){
+    if(make<0) return 0;
+    if(make==0)return 1;
+    if(i>numCoins) return 0;
+    if(calculated[i][make]==false){
+        table[i][make] = solve(i,make-c[i]) + solve(i+1,make);
+        calculated[i][make] = true;
+    }
+    return table[i][make];
+}
+int main(){
+    int make;
+    cin>>make>>numCoins;
+    for(int i=1;i<=numCoins;i++){cin>>c[i];}
+    cout<<solve(1,make)<<endl;
+    return 0;
+}
+
+```
