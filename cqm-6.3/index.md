@@ -33,7 +33,7 @@ int main(){
 }
 
 ```
-## [Substring Game]
+## [Substring Game](https://www.hackerrank.com/contests/cqm-6-3/challenges/substring-game-2)
 The game ends in two conditions. First, if string becomes empty and second if the string becomes only of zeros or ones. So, the total number of moves are minimum of x and y, where x is the count of ones in the string and y is the count of zeros in the string. If the total number of moves is even then 'Bob' wins the game else 'Alice' win the game.
 
 Code(in C++) :
