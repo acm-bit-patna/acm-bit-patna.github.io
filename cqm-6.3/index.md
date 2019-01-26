@@ -33,7 +33,42 @@ int main(){
 }
 
 ```
+## [Substring Game] 
+The game ends in two conditions. First, if string becomes empty and second if the string becomes only of zeros or ones. So, the total number of moves are minimum of x and y, where x is the count of ones in the string and y is the count of zeros in the string. If the total number of moves is even then 'Bob' wins the game else 'Alice' win the game.
 
+Code(in C++) :
+``` cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+
+    while(t--)
+    {
+        int n;
+        cin >> n;
+
+        string s;
+        cin >> s;
+
+        int c1,c2;
+        c1 = c2 = 0;
+
+        for(auto i:s)
+            i == '1' ? c1++ : c2++;
+
+        if(min(c1,c2)%2)
+            cout << "Alice\n";
+        else
+            cout << "Bob\n";
+    }
+    
+    return 0;
+}
+```
 ## [Brady and the river](https://www.hackerrank.com/contests/cqm-6-3/challenges/brady-and-the-river)
 
 You can use ternary search or use geometry to find the answer.
