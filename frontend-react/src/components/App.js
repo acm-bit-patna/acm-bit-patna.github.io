@@ -8,27 +8,25 @@ import TeamPage from "./TeamPage";
 import AboutPage from "./AboutPage"
 
 
-function App() {
+export default function App() {
     return (
         <Router>
-            <Navbar/>
+            {/* <Navbar/> */}
             <Switch>
                 <Route exact path="/">
                     <LandingPage />
                 </Route>
                 <Route path="/contests">
-                    <ContestPage />
+                    {/* <ContestPage /> */}
                 </Route>
                 <Route path="/team">
-                    <TeamPage />
+                    {/* <TeamPage /> */}
                 </Route>
                 <Route path="/about">
-                    <AboutPage />
+                    {/* <AboutPage /> */}
                 </Route>
 
             </Switch>
         </Router>
     );
 }
-
-export default App;
