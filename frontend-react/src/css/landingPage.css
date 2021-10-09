@@ -26,3 +26,35 @@
   right: 0;
 }
 
+.content {
+  position: absolute;
+  display: flex;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  /* transform: translate(-50%, 0); */
+}
+
+.content > div {
+  padding-top: 2%;
+}
+
+.part1 {
+  flex: 4;
+  padding: 0 10%;
+}
+
+.part1 h1 {
+  color: #272934;
+  font-size: 4rem;
+}
+
+.part1 h2 {
+    color: #272934;
+    padding-top: 1%;
+}
+
+.part2 {
+  flex: 2;
+  padding-right: 10%;
+}
