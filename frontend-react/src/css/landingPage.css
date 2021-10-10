@@ -88,3 +88,18 @@
 .typed-cursor {
   color: #0563BB;
 }
+
+
+/*  
+# Social Site buttons
+*/
+.social-sites {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 0;
+}
+
+.social-sites:hover {
+  background-color: #067DED;
+  color: white;
+}
