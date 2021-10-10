@@ -39,22 +39,28 @@
   padding-top: 2%;
 }
 
-.part1 {
-  flex: 4;
+.content-part1 {
+  flex: 5;
   padding: 0 10%;
 }
 
-.part1 h1 {
+.content-part1 h1 {
   color: #272934;
   font-size: 4rem;
+  font-family: 'Cabin Sketch', cursive
 }
 
-.part1 h2 {
+.content-part1 p {
     color: #272934;
     padding-top: 1%;
+    font-size: 1.5rem;
 }
 
-.part2 {
+.content-part2 {
   flex: 2;
   padding-right: 10%;
+}
+
+.typed {
+  color: #0563BB;
 }
